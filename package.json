@@ -1,0 +1,11 @@
+{
+  "name": "toy_board",
+  "version": "1.0.0",
+  "description": "Practicing Node-js",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Sinabro",
+  "license": "ISC"
+}
