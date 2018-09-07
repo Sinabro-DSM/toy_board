@@ -1,4 +1,5 @@
 # 게시판 만들기
+
 ## 프로젝트 목적
 - Node.js에 익숙해지자
 - rest api를 이해해보자
@@ -54,3 +55,10 @@ GET /board/{index}<br>
 ### 4. index를 받아서 index에 해당하는 게시물을 삭제한다.
 - 요청: DELETE /board/{index}
 - 응답: status 204
+### 5. 회원가입 하기
+- 요청 POST /auth/signUp
+- 응답 status 200
+
+### 6. 로그인 하기 (토큰으로)
+- 요청 POST /auth/login
+- 응답 토큰 주기
