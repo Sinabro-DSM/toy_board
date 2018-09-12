@@ -21,8 +21,9 @@ app.use((req,res,next)=>{
 });
 
 app.use('/auth',require('./routes/auth'));
-app.use('/hello',require('./util/isLoggedIn'), (req,res)=>{
+app.use('/check',require('./util/isLoggedIn'), (req,res,next)=>{
     res.send("hello world");
-});
+    next();
+}), app.use('/post',require('./routes/post'));
 
 app.listen(PORT,()=>console.log('server start at'+PORT));

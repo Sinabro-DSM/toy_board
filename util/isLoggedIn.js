@@ -10,6 +10,8 @@ const isLoggedIn = (req,res,next)=>{
         if(err){
             return res.status(404).json({"message":"Invalid token!"});
         }
+        console.log(decoded);
+        req.token = decoded;
         next();
     });
 }

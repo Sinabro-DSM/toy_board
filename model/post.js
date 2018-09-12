@@ -11,11 +11,11 @@ const postSchema = new Schema ({
     id:{
         type:String
     },
-    date:{
-        type:Date,
-        default:Date.now
+    Date:{
+        type : Date,
+        default: Date.now()
     }
 });
 
-postSchema.plugin(mongoose_auto_increment.plugin,{model:'posts',field:'post_id',startAt:1});
+//postSchema.plugin(mongoose_auto_increment.plugin,{model:'posts',field:'post_id',startAt:1});
 module.exports=mongoose.model('posts', postSchema);
